@@ -18,10 +18,10 @@ bool LRUReplacer::Victim(frame_id_t *frame_id) {
     //  利用lru_replacer中的LRUlist_,LRUHash_实现LRU策略
     //  选择合适的frame指定为淘汰页面,赋值给*frame_id
 
+
     return true;
 }
-
-/**
+/**:
  * @brief 固定一个frame, 表明它不应该成为victim（即在replacer中移除该frame_id）
  * @param frame_id the id of the frame to pin
  */
